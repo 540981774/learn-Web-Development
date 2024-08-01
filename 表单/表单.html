@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+form span{width:100px;
+		text-align:left;
+		display:inline-block;
+		}
+div{border-radius:20px;
+	border:2px solid #3FF;
+	width:500px;
+	margin:auto;}
+h3{height: 40px;
+	padding-left: 15px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	background:linear-gradient(#0FC,#0CF);
+	margin:0px 0px;
+}
+fieldset{border: none;
+		border-top:2px solid #000;}
+	.w{text-align: center;
+		margin: 20px auto;}
+
+		
+</style>
+</head>
+
+<body>
+<div>
+<h3>反馈表单</h3>
+<form>
+	<fieldset>
+    <legend>基本信息</legend>
+  		<p><span>姓名:</span><input type="text" autofocus ></p>
+		<p><span>性别：</span><input type="radio"  name="sex" value="nan" id="nan">
+			<label for="nan">男</label>
+    		<input type="radio"  name="sex" value="nv" id="nv">
+			<label for="nv">女</label>
+		</p>
+    	<p><span>兴趣爱好:</span><input type="checkbox" name="like" value="football" id="football">
+			<label for="football">足球</label>
+      		<input type="checkbox" name="like" value="climb" id="climb">
+			<label for="climb">爬山</label>
+      		<input type="checkbox" name="like" value="swim" id="swim">
+			<label for="swim">游泳</label>
+    </p>
+    <p><span>上传头像:</span><input type="file"></p>
+  <p><span>E-mail:</span><input type="email"></p>
+  <p><span>常用网址：</span><input type="url" list="urlist">
+    				<datalist id="urlist">
+                    	<option label="百度" value="http://www.baidu.com"></option>
+                        <option label="微博" value="http://www.weibo.com"></option>
+                        <option label="搜狐" value="http://www.sohu.com"></option>
+    </datalist>
+  </p>
+    <p><span>注册日期：</span><input type="date"></p>
+    <p><span>年龄：</span><input type="number"></p>
+    <p><span>电话号码：</span><input type="tel" pattern="^\d{11}$"/></p>
+  <p><span>城区:</span>
+    <select name="district">
+    	<optgroup label="北京">
+        	<option value="dc">东城区</option>
+            <option value="xc">西城区</option>
+            <option value="hd">海淀区</option>
+            <option value="cy">朝阳区</option>
+        <optgroup label="西安">
+        	<option value="xc">新城区</option>
+            <option value="ca">长安区</option>
+            <option value="bl">碑林区</option>
+            <option value="yt">雁塔区</option>
+	  </select>
+    </p>
+ </fieldset>
+ <fieldset>
+ <legend>详细信息</legend>
+ 内容：
+<textarea cols="60" rows="8" placeholder="详细内容"></textarea>
+											   </fieldset>
+											   
+    <p class="w"><input class="w" type="submit" value="提交">
+       <input class="w" type="reset"  value="重置">
+	</p>
+    
+
+</form>
+</div>
+</body>
+</html>
