@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style type="text/css">
+		.container{width:1200px;margin:5px auto;text-align:center;}
+		.pic{width:592px;
+			height:343px;
+			background:url("文件接收柜/pic07.jpg") no-repeat;
+			float:left;
+			position:relative;
+			overflow:hidden;
+			margin:4px;}
+		.pic:nth-of-type(2){background-image:url("文件接收柜/pic07.jpg");
+			background-repeat :no-repeat;
+			background-size:cover;}
+		.content{width:296px;
+					height :343px;
+					background:rgba(255,255,255,0.5);
+					position:absolute;
+					left:-296px;
+					top:0px;
+					padding-tor:100px;
+					transition: all 2s 1inear;}
+		.pic:nth-of-type(2) .content{left:592px;}
+		.pic:hover .content{left:0px;}
+		.pic:nth-of-type(2):hover .content{left:296px;}
+</style>
+</head>
+
+<body>
+		<div class="container">
+			<h1>大咖推荐</h1>
+			<div class="pic">
+				<div class="content">
+					<p>biaoti</p>
+					<p>neir</p>
+				</div>
+			</div>
+			<div class="pic">
+				<div class="content">
+					<p>biaoti</p>
+					<p>neir</p>
+				</div>
+			</div>	
+		</div>
+</body>
+</html>
